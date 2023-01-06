@@ -1,0 +1,20 @@
+/* —————————————————————————————————————————————————————————————————— ☕ —————————————————————————————————————————————————————————————————— */
+
+.app-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+}
+
+.app-container.no-transition * {
+    transition: none !important;
+}
+
+.horizontal-main-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex: 1 0 0;
+}

@@ -1,0 +1,61 @@
+/* —————————————————————————————————————————————————————————————————— ☕ —————————————————————————————————————————————————————————————————— */
+
+* {
+    box-sizing: border-box;
+}
+
+.is-text-garbled * {
+    font-family: 'Flow Circular', sans-serif !important;
+    line-height: 1.45em !important;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    font-family: var(--font-interface);
+    line-height: var(--line-height-tight);
+    font-size: var(--font-ui-medium);
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body.is-translucent {
+    background-color: transparent;
+}
+
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+body [contenteditable="true"],
+body [contenteditable=""] {
+    user-select: text;
+    -webkit-user-select: text;
+}
+
+body.is-grabbing,
+body.is-grabbing *:not(.workspace-leaf-resize-handle) {
+    cursor: -moz-grabbing !important;
+    cursor: -webkit-grabbing !important;
+    cursor: grabbing !important;
+}
+
+body.is-grabbing iframe:not(.is-controlled),
+body.is-grabbing webview {
+    pointer-events: none;
+}
+
+iframe {
+    color-scheme: normal;
+}
